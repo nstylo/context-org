@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@context-org/source": ["./packages/source/src/index.ts"],
+      "@context-org/engine": ["./packages/engine/src/index.ts"],
+      "@context-org/view": ["./packages/view/src/index.ts"]
+    }
+  }
+}

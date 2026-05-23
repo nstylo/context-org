@@ -1,0 +1,26 @@
+{
+  "name": "context-org",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "context-org": "./dist/main.js"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "pnpm -r exec tsc -b --clean && rm -rf dist",
+    "dev": "tsx src/main.ts",
+    "start": "node dist/main.js",
+    "typecheck": "tsc -b --pretty false"
+  },
+  "dependencies": {
+    "@context-org/engine": "workspace:*",
+    "@context-org/source": "workspace:*",
+    "@context-org/view": "workspace:*"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "pnpm@9.15.4"
+}
